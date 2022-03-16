@@ -1,5 +1,5 @@
 {% set name = "ipydagred3" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 18a0b5df0c49c358f7eac7d58162b7a0198499973dc6e4903f6af91de5f1dbb3
+  sha256: 99a40be81d4dbf5040234aab229275e2839803b93d87a50d6d1d811d3489647d
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - nodejs
     - yarn
     - jupyter-packaging
+    - jupyterlab >=3.2
     - setuptools
   run:
     - python >=3.7
