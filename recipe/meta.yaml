@@ -1,5 +1,5 @@
 {% set name = "ipydagred3" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f61bd5ac83e8c47bc58728803d37d3fb425b6d6a7cfb2e391e42aead2941729
+  sha256: f9b3af55cc6ea2f97de1baeb3a09cbe5a1afc277ad4e3c0e1a0b15d9bccfadeb
 
 build:
   number: 0
