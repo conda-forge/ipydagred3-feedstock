@@ -1,11 +1,11 @@
-About ipydagred3
-================
+About ipydagred3-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipydagred3-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/timkpaine/ipydagred3
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipydagred3-feedstock/blob/main/LICENSE.txt)
 
 Summary: ipywidgets based jupyterlab wrapper for the dagre-d3 directed acyclic graph charting library
 
