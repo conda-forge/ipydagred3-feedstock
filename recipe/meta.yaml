@@ -6,17 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 70248e6cd7ae9895d8739e053a7056da9c2c39886d9a8c4bb8ec1afbe7d2b845
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-build-isolation
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - nodejs
     - yarn
@@ -24,12 +24,14 @@ requirements:
     - hatch-jupyter-builder
     - jupyterlab >=4,<5
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - ipywidgets >=7.5.1
   run_constrained:
     - jupyterlab >=4,<5
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ipydagred3
 
